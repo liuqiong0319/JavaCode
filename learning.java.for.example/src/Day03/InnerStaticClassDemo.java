@@ -1,10 +1,19 @@
-package Day03;
+package day03;
+
 /**
- * @description:Ç¶Ì×ÄÚ²¿Àà£¬¾ÍÊÇĞŞÊÎÎªstaticµÄÄÚ²¿Àà¡£
- * ÉùÃ÷ÎªstaticµÄÄÚ²¿Àà£¬²»ĞèÒªÄÚ²¿Àà¶ÔÏóºÍÍâ²¿Àà¶ÔÏóÖ®¼äµÄÁªÏµ£¬
- * ¾ÍÊÇËµÎÒÃÇ¿ÉÒÔÖ±½ÓÒıÓÃouter.inner£¬¼´²»ĞèÒª´´½¨Íâ²¿Àà£¬Ò²²»ĞèÒª´´½¨ÄÚ²¿Àà¡£
-      Ç¶Ì×ÀàºÍÆÕÍ¨µÄÄÚ²¿Àà»¹ÓĞÒ»¸öÇø±ğ£ºÆÕÍ¨ÄÚ²¿Àà²»ÄÜÓĞstaticÊı¾İºÍstaticÊôĞÔ£¬Ò²²»ÄÜ°üº¬Ç¶Ì×Àà£¬µ«Ç¶Ì×Àà¿ÉÒÔ¡£
-      ¶øÇ¶Ì×Àà²»ÄÜÉùÃ÷Îªprivate£¬Ò»°ãÉùÃ÷Îªpublic£¬·½±ãµ÷ÓÃ¡£
+ * @description:Ç¶ï¿½ï¿½ï¿½Ú²ï¿½ï¿½à£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªstaticï¿½ï¿½ï¿½Ú²ï¿½ï¿½à¡£ 
+ *                                             ï¿½ï¿½ï¿½ï¿½Îªstaticï¿½ï¿½ï¿½Ú²ï¿½ï¿½à£¬ï¿½ï¿½ï¿½ï¿½Òªï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â²¿
+ *                                             ï¿½ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½
+ *                                             ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *                                             outer.innerï¿½ï¿½ï¿½ï¿½
+ *                                             ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½à£¬Ò²ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½à¡£
+ *                                             Ç¶ï¿½ï¿½ï¿½ï¿½
+ *                                             ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½Ú²ï¿½ï¿½à»¹ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½Ú²ï¿½ï¿½à²»ï¿½
+ *                                             ï¿½ï¿½ï¿½static
+ *                                             ï¿½ï¿½ï¿½İºï¿½staticï¿½ï¿½ï¿½Ô£ï¿½Ò²ï¿½ï¿½ï¿½Ü°ï¿½ï¿½ï¿½Ç¶
+ *                                             ï¿½ï¿½ï¿½à£¬ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¡ï¿½
+ *                                             ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½à²»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªprivate
+ *                                             ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªpublicï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¡ï¿½
  * @author Administrator
  *
  */
@@ -12,46 +21,48 @@ public class InnerStaticClassDemo {
 	private String name = "joan";
 	public static int age = 27;
 	public static float score = 85.4f;
-	public static class Inner{
+
+	public static class Inner {
 		private String name = "joan.liu";
 		private static int age = 30;
-		String province = "ÉÏº£";
-		public void showInner(){
-		System.out.println(InnerStaticClassDemo.age);
-		//Èç¹ûÍâ²¿ÀàµÄ¾²Ì¬³ÉÔ±ÓëÄÚ²¿ÀàµÄ³ÉÔ±Ãû³ÆÏàÍ¬£¬¿ÉÍ¨¹ı¡°ÀàÃû.¾²Ì¬³ÉÔ±¡±·ÃÎÊÍâ²¿ÀàµÄ¾²Ì¬³ÉÔ±
-		InnerStaticClassDemo innerDemo=new InnerStaticClassDemo();
-		System.out.println(innerDemo.name);
-		//¾²Ì¬ÄÚ²¿Àà²»ÄÜÖ±½Ó·ÃÎÊÍâ²¿ÀàµÄ·Ç¾²Ì¬³ÉÔ±£¬µ«¿ÉÒÔÍ¨¹ı new Íâ²¿Àà().³ÉÔ± µÄ·½Ê½·ÃÎÊ 
-		System.out.println(score);
-		//Èç¹ûÍâ²¿ÀàµÄ¾²Ì¬³ÉÔ±ÓëÄÚ²¿ÀàµÄ³ÉÔ±Ãû³Æ²»ÏàÍ¬£¬Ôò¿ÉÍ¨¹ı¡°³ÉÔ±Ãû¡±Ö±½Óµ÷ÓÃÍâ²¿ÀàµÄ¾²Ì¬³ÉÔ±
-		System.out.println(age);
-		System.out.println(name);
-		
-		System.out.println("this is inner class");
-		}		
+		String province = "ï¿½Ïºï¿½";
+
+		public void showInner() {
+			System.out.println(InnerStaticClassDemo.age);
+			// ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½Ä¾ï¿½Ì¬ï¿½ï¿½Ô±ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.ï¿½ï¿½Ì¬ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½Ä¾ï¿½Ì¬ï¿½ï¿½Ô±
+			InnerStaticClassDemo innerDemo = new InnerStaticClassDemo();
+			System.out.println(innerDemo.name);
+			// ï¿½ï¿½Ì¬ï¿½Ú²ï¿½ï¿½à²»ï¿½ï¿½Ö±ï¿½Ó·ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½Ä·Ç¾ï¿½Ì¬ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ new ï¿½â²¿ï¿½ï¿½().ï¿½ï¿½Ô± ï¿½Ä·ï¿½Ê½ï¿½ï¿½ï¿½ï¿½
+			System.out.println(score);
+			// ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½Ä¾ï¿½Ì¬ï¿½ï¿½Ô±ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½Æ²ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Ö±ï¿½Óµï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½Ä¾ï¿½Ì¬ï¿½ï¿½Ô±
+			System.out.println(age);
+			System.out.println(name);
+
+			System.out.println("this is inner class");
+		}
 	}
-	public void outerShow(){
+
+	public void outerShow() {
 		System.out.println("this is outer class");
-		Inner inner=new Inner();
+		Inner inner = new Inner();
 		inner.showInner();
-		System.out.println("Íâ²¿ÀàµÄage:"+age);
-		System.out.println("ÄÚ²¿ÀàµÄage:"+inner.age);
-		System.out.println("ÄÚ²¿ÀàµÄname"+inner.name);
-		
+		System.out.println("ï¿½â²¿ï¿½ï¿½ï¿½age:" + age);
+		System.out.println("ï¿½Ú²ï¿½ï¿½ï¿½ï¿½age:" + inner.age);
+		System.out.println("ï¿½Ú²ï¿½ï¿½ï¿½ï¿½name" + inner.name);
+
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		
-		Inner inner=new Inner();
-		//´´½¨¾²Ì¬ÄÚ²¿ÀàµÄ¶ÔÏóÊ±£¬²»ĞèÒªÍâ²¿ÀàµÄ¶ÔÏó£¬¿ÉÒÔÖ±½Ó´´½¨ ÄÚ²¿Àà ¶ÔÏóÃû= new ÄÚ²¿Àà();
+
+		Inner inner = new Inner();
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¬ï¿½Ú²ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½â²¿ï¿½ï¿½Ä¶ï¿½ï¿½ó£¬¿ï¿½ï¿½ï¿½Ö±ï¿½Ó´ï¿½ï¿½ï¿½ ï¿½Ú²ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½= new ï¿½Ú²ï¿½ï¿½ï¿½();
 		inner.showInner();
-		
+
 		System.out.println("---------------------");
-		InnerStaticClassDemo outerDemo=new InnerStaticClassDemo();
+		InnerStaticClassDemo outerDemo = new InnerStaticClassDemo();
 		outerDemo.outerShow();
-		
+
 	}
 
 }

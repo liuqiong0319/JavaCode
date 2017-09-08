@@ -1,10 +1,10 @@
-package Day03;
+package day03;
 
 public class StrucDemo {
 	private String name;
 	private int num;
 	private float score;
-	
+
 	public String getName() {
 		return name;
 	}
@@ -29,16 +29,15 @@ public class StrucDemo {
 		this.score = score;
 	}
 
-//	public StrucDemo() {
-//		super();
-//	}
-//
-//	public StrucDemo(String name, int num, float score) {
-//		super();
-//		this.name = name;
-//		this.num = num;
-//		this.score = score;
-//	}
-	
+	// public StrucDemo() {
+	// super();
+	// }
+	//
+	// public StrucDemo(String name, int num, float score) {
+	// super();
+	// this.name = name;
+	// this.num = num;
+	// this.score = score;
+	// }
 
 }

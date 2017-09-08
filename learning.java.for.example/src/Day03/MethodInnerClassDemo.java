@@ -1,28 +1,29 @@
-package Day03;
+package day03;
+
 /**
- * @description:局部内部类，是指内部类定义在方法和作用域内
+ * @description:锟街诧拷锟节诧拷锟洁，锟斤拷指锟节诧拷锟洁定锟斤拷锟节凤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷
  * @author Administrator
  *
  */
 public class MethodInnerClassDemo {
-	
-	public void show()
-	{
-		class InnerClass{
-				int score=86;
-				public int innerShow(){
-					System.out.println("this is inner  class method");
-					return score+10;			
-				}
+
+	public void show() {
+		class InnerClass {
+			int score = 86;
+
+			public int innerShow() {
+				System.out.println("this is inner  class method");
+				return score + 10;
+			}
 		}
-		InnerClass innerclass=new InnerClass();
-		int newscore=innerclass.innerShow();
+		InnerClass innerclass = new InnerClass();
+		int newscore = innerclass.innerShow();
 		System.out.println(newscore);
 		System.out.println("this is outer method");
 	}
-	
+
 	public static void main(String[] args) {
-		MethodInnerClassDemo methodInner=new MethodInnerClassDemo();
+		MethodInnerClassDemo methodInner = new MethodInnerClassDemo();
 		methodInner.show();
 	}
 
