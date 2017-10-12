@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
   <component name="EclipseModuleManager">
-    <libelement value="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.33/fastjson-1.2.33.jar!/" />
+    <libelement value="file://C:/Users/joan.liu/.m2/repository/com/alibaba/fastjson/1.2.33/fastjson-1.2.33.jar" />
     <libelement value="jar://E:/json-lib-2.4-jdk15及其依赖jar包/commons-beanutils-1.8.0.jar!/" />
     <libelement value="jar://E:/json-lib-2.4-jdk15及其依赖jar包/commons-collections-3.1.jar!/" />
     <libelement value="jar://E:/json-lib-2.4-jdk15及其依赖jar包/commons-lang-2.5.jar!/" />
@@ -10,9 +10,9 @@
     <libelement value="jar://E:/json-lib-2.4-jdk15及其依赖jar包/json-lib-2.4-jdk15.jar!/" />
     <libelement value="jar://E:/json-lib-2.4-jdk15及其依赖jar包/json-lib-2.4-jdk15-javadoc.jar!/" />
     <libelement value="jar://E:/json-lib-2.4-jdk15及其依赖jar包/json-lib-2.4-jdk15-sources.jar!/" />
-    <libelement value="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10.jar!/" />
-    <libelement value="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10-javadoc.jar!/" />
-    <libelement value="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10-sources.jar!/" />
+    <libelement value="file://C:/Users/joan.liu/.m2/repository/org/testng/testng/6.9.10/testng-6.9.10.jar" />
+    <libelement value="file://C:/Users/joan.liu/.m2/repository/org/testng/testng/6.9.10/testng-6.9.10-javadoc.jar" />
+    <libelement value="file://C:/Users/joan.liu/.m2/repository/org/testng/testng/6.9.10/testng-6.9.10-sources.jar" />
     <src_description expected_position="0">
       <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
     </src_description>
@@ -27,7 +27,7 @@
     <orderEntry type="module-library">
       <library name="fastjson-1.2.33.jar">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.33/fastjson-1.2.33.jar!/" />
+          <root url="file://C:/Users/joan.liu/.m2/repository/com/alibaba/fastjson/1.2.33/fastjson-1.2.33.jar" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -109,7 +109,7 @@
     <orderEntry type="module-library">
       <library name="testng-6.9.10.jar">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10.jar!/" />
+          <root url="file://C:/Users/joan.liu/.m2/repository/org/testng/testng/6.9.10/testng-6.9.10.jar" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -118,7 +118,7 @@
     <orderEntry type="module-library">
       <library name="testng-6.9.10-javadoc.jar">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10-javadoc.jar!/" />
+          <root url="file://C:/Users/joan.liu/.m2/repository/org/testng/testng/6.9.10/testng-6.9.10-javadoc.jar" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -127,7 +127,7 @@
     <orderEntry type="module-library">
       <library name="testng-6.9.10-sources.jar">
         <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.10/testng-6.9.10-sources.jar!/" />
+          <root url="file://C:/Users/joan.liu/.m2/repository/org/testng/testng/6.9.10/testng-6.9.10-sources.jar" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
