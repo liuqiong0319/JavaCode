@@ -8,7 +8,7 @@ public class StaticCode {
 	}
 
 	static void print() {
-		System.out.println("完成打印功能");
+		System.out.println("��ɴ�ӡ����");
 	}
 
 }

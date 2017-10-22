@@ -2,6 +2,7 @@ package day05;
 
 public class Person {
 
+	private String name;
 	private int age;
 	private boolean sex;
 
